@@ -1,0 +1,12 @@
+.content{
+    margin: 2em auto;
+}
+
+mat-card-title{
+    text-align: center;
+}
+.footer{
+    position: relative;
+    margin-top: 50px;
+    bottom: 0;
+}

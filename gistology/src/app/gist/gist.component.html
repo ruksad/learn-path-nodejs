@@ -1,0 +1,21 @@
+<div fxLayout="column" fxFlex>
+  <!-- We list the last 5 saved gists -->
+  <div fxFlex="100">
+    <div fxFlex="30"> </div>
+    <div fxFlex="40">
+      <!-- three line densed list -->
+      <mat-list dense>
+        <mat-list-item *ngFor="let gist of gists">
+          <h3 mat-line> <b>{{gist.title}}</b> </h3>
+          <p mat-line> {{gist.description}} </p>
+          <p mat-line> {{gist.technologies}} </p>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div fxFlex="30"> </div>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <a mat-raised-button routerLink="gists">See Gist List</a>
+  </div>
+</div>
